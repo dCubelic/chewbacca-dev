@@ -140,7 +140,15 @@
 
         <!-- Footer -->
         <footer>
-            <p>&copy; 2025 CHEWBACCA DEV. All rights reserved.</p>
+            <p>
+                &copy; <span id="current-year"></span> CHEWBACCA DEV. All rights
+                reserved.
+            </p>
+
+            <script>
+                document.getElementById("current-year").textContent =
+                    new Date().getFullYear();
+            </script>
         </footer>
     </body>
 </html>
