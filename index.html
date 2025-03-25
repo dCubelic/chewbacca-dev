@@ -22,10 +22,11 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                height: 100vh;
+                min-height: 100vh;
                 text-align: center;
-                background-color: #121212; /* Dark background */
-                color: #f4f4f9; /* Light text */
+                background-color: #121212;
+                color: #f4f4f9;
+                padding: 20px;
             }
 
             header {
@@ -33,6 +34,7 @@
             }
 
             img {
+                width: 100%;
                 max-width: 300px;
                 border-radius: 8px;
                 margin-bottom: 20px;
@@ -40,7 +42,7 @@
             }
 
             h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
                 margin: 0;
                 color: #0078d7;
             }
@@ -48,23 +50,26 @@
             p {
                 font-size: 1.2rem;
                 margin: 10px 0;
-                color: #b0bec5; /* Subtle text color */
+                color: #b0bec5;
             }
 
-            a {
-                text-decoration: none;
+            .btn {
+                display: inline-block;
+                padding: 10px 20px;
+                margin: 10px 5px;
+                border: 2px solid #0078d7;
                 color: #0078d7;
+                border-radius: 5px;
                 font-weight: bold;
+                text-transform: uppercase;
+                transition: 0.3s ease-in-out;
+                font-size: 1rem;
+                white-space: nowrap;
             }
 
-            a:hover {
-                text-decoration: underline;
-            }
-
-            footer {
-                margin-top: 20px;
-                font-size: 0.9rem;
-                color: #607d8b;
+            .btn:hover {
+                background-color: #0078d7;
+                color: #fff;
             }
 
             .social-links {
@@ -81,39 +86,39 @@
                 color: #0078d7;
             }
 
-            .btn {
-                display: inline-block;
-                padding: 10px 20px;
-                margin: 10px 5px;
-                border: 2px solid #0078d7;
-                color: #0078d7;
-                border-radius: 5px;
-                font-weight: bold;
-                text-transform: uppercase;
-                transition: 0.3s ease-in-out;
+            footer {
+                margin-top: 20px;
+                font-size: 0.9rem;
+                color: #607d8b;
             }
 
-            .btn:hover {
-                background-color: #0078d7;
-                color: #fff;
+            /* Responsive Design */
+            @media (max-width: 768px) {
+                h1 {
+                    font-size: 1.8rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+
+                .btn {
+                    width: 100%;
+                    max-width: 300px;
+                    display: block;
+                    margin: 10px auto;
+                }
             }
         </style>
     </head>
     <body>
         <header>
-            <!-- Include Your Picture -->
-            <!-- <img src="image.webp" alt="Company Logo or Main Visual" /> -->
-            <img
-                src="image.webp"
-                alt="Company Logo or Main Visual"
-                style="max-width: 800px"
-            />
+            <img src="image.webp" alt="Company Logo or Main Visual" />
             <h1>CHEWBACCA DEV</h1>
             <p>Crafting scalable software solutions.</p>
         </header>
 
         <main>
-            <!-- Buttons for Important Links -->
             <a class="btn" href="https://github.com/dcubelic" target="_blank"
                 ><i class="fab fa-github"></i> GitHub</a
             >
@@ -124,11 +129,10 @@
                 ><i class="fas fa-file-alt"></i> My CV</a
             >
             <a class="btn" href="mailto:dominik.cubelic@gmail.com"
-                ><i class="fas fa-envelope"></i> Mail
-            </a>
+                ><i class="fas fa-envelope"></i> Mail</a
+            >
         </main>
 
-        <!-- Social Media Links -->
         <div class="social-links">
             <a
                 href="https://hr.linkedin.com/in/dcubelic"
@@ -138,16 +142,10 @@
             ></a>
         </div>
 
-        <!-- Footer -->
         <footer>
-            <p>
-                &copy; <span id="current-year"></span> CHEWBACCA DEV. All rights
-                reserved.
-            </p>
-
+            <p>&copy; <span id="current-year"></span> CHEWBACCA DEV. All rights reserved.</p>
             <script>
-                document.getElementById("current-year").textContent =
-                    new Date().getFullYear();
+                document.getElementById("current-year").textContent = new Date().getFullYear();
             </script>
         </footer>
     </body>
