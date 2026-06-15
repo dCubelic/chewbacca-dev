@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bela Scores — Support</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+        <link rel="icon" href="/thumbnail.webp" type="image/jpeg" />
+        <style>
+            body {
+                margin: 0;
+                font-family: "Roboto", sans-serif;
+                background-color: #121212;
+                color: #f4f4f9;
+                line-height: 1.6;
+            }
+            .wrap {
+                max-width: 720px;
+                margin: 0 auto;
+                padding: 40px 20px 80px;
+            }
+            h1 {
+                color: #0078d7;
+                font-size: 2rem;
+                margin-bottom: 4px;
+            }
+            h2 {
+                font-size: 1.25rem;
+                margin-top: 32px;
+            }
+            p,
+            li {
+                color: #b0bec5;
+                font-size: 1.05rem;
+            }
+            a {
+                color: #0078d7;
+            }
+            .back {
+                display: inline-block;
+                margin-bottom: 24px;
+                color: #607d8b;
+                text-decoration: none;
+            }
+            .btn {
+                display: inline-block;
+                padding: 10px 20px;
+                margin: 16px 0;
+                border: 2px solid #0078d7;
+                color: #0078d7;
+                border-radius: 5px;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-decoration: none;
+                transition: 0.3s ease-in-out;
+            }
+            .btn:hover {
+                background-color: #0078d7;
+                color: #fff;
+            }
+            footer {
+                color: #607d8b;
+                font-size: 0.9rem;
+                margin-top: 48px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <a class="back" href="/bela">&larr; Bela Scores</a>
+            <h1>Support</h1>
+            <p>
+                Need help with Bela Scores, found a bug, or have an idea? The fastest way to reach
+                me is by email — I read every message.
+            </p>
+
+            <a class="btn" href="mailto:dominik.cubelic@gmail.com?subject=Bela%20Scores%20Support"
+                ><i class="fas fa-envelope"></i> Email Support</a
+            >
+
+            <h2>When reporting a problem</h2>
+            <p>To help me fix it quickly, please include:</p>
+            <ul>
+                <li>Your device model and iOS version</li>
+                <li>The app version (Settings → scroll to the bottom)</li>
+                <li>What you did and what happened vs. what you expected</li>
+            </ul>
+
+            <h2>Common questions</h2>
+            <p>
+                <strong>The card scanner isn't recognizing cards.</strong> The scanner is trained on
+                Hungarian-suited cards and works best with good lighting and the cards laid flat. You
+                can always enter points by hand instead.
+            </p>
+            <p>
+                <strong>My games aren't syncing.</strong> iCloud sync is a Pro feature — make sure
+                you're signed into iCloud and that sync is enabled on each device.
+            </p>
+            <p>
+                <strong>I bought Pro but it's not unlocked.</strong> Open the paywall and tap
+                "Restore purchase," or email me and I'll sort it out.
+            </p>
+
+            <h2>Privacy</h2>
+            <p>
+                See the <a href="/bela/privacy">privacy policy</a>. Your games stay on your device
+                and in your own iCloud — nothing is collected or tracked.
+            </p>
+
+            <footer>
+                &copy; <span id="y"></span> Chewbacca Dev. All rights reserved.
+                <script>
+                    document.getElementById("y").textContent = new Date().getFullYear();
+                </script>
+            </footer>
+        </div>
+    </body>
+</html>
